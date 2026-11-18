@@ -1,0 +1,156 @@
+{
+  "id": "009-defectors",
+  "title": "줄어드는 탈북민 (9편)",
+  "status": "draft",
+  "publish_at": "",
+  "caption": "목숨 걸고 국경을 넘는 사람들이 줄고 있습니다.\n\n2009년 2,914명이던 한국 입국 탈북민은 2026년 상반기 63명까지 줄었습니다. 그리고 지금, 이들의 이름을 '북향민'으로 바꾸는 문제로 논쟁이 벌어지고 있습니다.\n\n#탈북민 #북향민 #북한인권 #자유민주주의 #팩트체크",
+  "threads_text": "한 해 3천 명 가까이 오던 탈북민이 이제 반년에 63명입니다.\n그리고 정부는 이들의 이름을 '북향민'으로 바꾸려 하고, 당사자들은 \"탈북은 우리 정체성\"이라며 반발합니다.\n\n목숨 걸고 국경을 넘은 사람의 이름,\n국가가 바꿔 불러도 되는 걸까요?",
+  "slides": [
+    {
+      "type": "cover",
+      "lines": [
+        "목숨 걸고",
+        "넘어온 사람들"
+      ],
+      "accent": [
+        "점점",
+        "줄고 있다"
+      ],
+      "sub": [
+        "탈북민 숫자와",
+        "이름 논쟁"
+      ]
+    },
+    {
+      "type": "bars",
+      "label": [
+        "① 한국 입국 탈북민",
+        "(연도별, 명)"
+      ],
+      "max": 2914,
+      "rows": [
+        {
+          "name": "2009년",
+          "value": 2914,
+          "text": "2,914",
+          "tone": "good"
+        },
+        {
+          "name": "2019년",
+          "value": 1047,
+          "text": "1,047",
+          "tone": "good"
+        },
+        {
+          "name": "2024년",
+          "value": 236,
+          "text": "236",
+          "tone": "bad"
+        },
+        {
+          "name": "2025년",
+          "value": 224,
+          "text": "224",
+          "tone": "bad"
+        }
+      ],
+      "source": "통일부 (KEI·Korea Times 인용)"
+    },
+    {
+      "type": "stat",
+      "label": [
+        "② 2026년 상반기"
+      ],
+      "number": "63명",
+      "main": [
+        "1년 전보다",
+        "34.4% 감소"
+      ],
+      "sub": [
+        "북한의",
+        "국경 통제 강화"
+      ],
+      "source": "통일부 (Korea Herald 보도, 2026.8)"
+    },
+    {
+      "type": "stat",
+      "label": [
+        "③ 미국으로 간",
+        "탈북 난민"
+      ],
+      "number": "5년째 0명",
+      "main": [
+        "2021년 11월이",
+        "마지막"
+      ],
+      "source": "미 국무부 난민수속센터 (RFA, 2026.10)"
+    },
+    {
+      "type": "text",
+      "kicker": "이름 논쟁",
+      "lines": [
+        "정부는",
+        "'탈북민'을",
+        "'북향민'으로"
+      ],
+      "sub": [
+        "부정적 어감과",
+        "낙인을 줄이려는",
+        "취지라고 설명"
+      ],
+      "source": "통일부 입장문 (2026.7.31)"
+    },
+    {
+      "type": "text",
+      "kicker": "당사자들의 반발",
+      "lines": [
+        "\"탈북은",
+        "우리 정체성\""
+      ],
+      "sub": [
+        "유엔에 진정서 제출,",
+        "11월엔 정부청사 앞",
+        "집회까지"
+      ],
+      "source": "뉴시스 (2026.7.31)·경북매일 (2026.11.12)"
+    },
+    {
+      "type": "closing",
+      "lines": [
+        "목숨 걸고",
+        "선택한 자유"
+      ],
+      "sub": [
+        "그 이름은",
+        "누가 정해야 할까요?"
+      ],
+      "cta": "팔로우하고 함께 기록해요"
+    }
+  ],
+  "sources": [
+    {
+      "name": "KEI — 2009년 2,914명, 2019년 1,047명, 2025년 누적 34,538명",
+      "url": "https://keia.org/?p=28455"
+    },
+    {
+      "name": "Korea Times — 2023 196명, 2024 236명, 2025 224명",
+      "url": "https://www.koreatimes.co.kr/foreignaffairs/northkorea/20260806/63-n-korean-defectors-arrive-in-s-korea-in-1st-half-down-35-year-on-year"
+    },
+    {
+      "name": "Korea Herald — 2026 상반기 63명, 34.4% 감소",
+      "url": "https://www.koreaherald.com/article/10833508"
+    },
+    {
+      "name": "RFA — 미 입국 탈북 난민 5년째 0명 (2026.10.27)",
+      "url": "https://www.rfa.org/korean/in-focus/2026/10/27/north-korean-refugee-us-entry-china/"
+    },
+    {
+      "name": "뉴시스 — 통일부 입장문·탈북민 단체 OHCHR 진정 (2026.7.31)",
+      "url": "https://mobile.newsis.com/view/NISX20260731_0003731720"
+    },
+    {
+      "name": "경북매일 — '탈북은 우리 정체성' 집회 (2026.11.12)",
+      "url": "https://kbmaeil.com/article/20261112500387"
+    }
+  ]
+}

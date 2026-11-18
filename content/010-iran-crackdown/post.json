@@ -1,0 +1,134 @@
+{
+  "id": "010-iran-crackdown",
+  "title": "인터넷을 끄고 총을 쏜 정권 (10편)",
+  "status": "draft",
+  "publish_at": "",
+  "caption": "2026년 1월, 이란.\n\n정부는 인터넷을 99% 끊었고, 그 어둠 속에서 시위대에게 총을 쐈습니다. 인권단체 HRANA가 확인한 사망자만 6,872명, 아직 조사 중인 사례가 1만 1천 건이 넘습니다.\n\n#이란 #시위 #인터넷차단 #자유민주주의 #팩트체크",
+  "threads_text": "2026년 1월, 이란 정부는 인터넷을 끄고 시위대에게 총을 쐈습니다.\n확인된 사망자만 6,872명입니다.\n\n정부가 내 휴대폰을 끄는 날이 온다면,\n우리는 무엇으로 서로의 안부를 확인할까요?",
+  "slides": [
+    {
+      "type": "cover",
+      "lines": [
+        "인터넷을 끄고"
+      ],
+      "accent": [
+        "총을 쐈다"
+      ],
+      "sub": [
+        "2026년 1월,",
+        "이란에서 일어난 일"
+      ]
+    },
+    {
+      "type": "text",
+      "kicker": "2025년 12월 28일",
+      "lines": [
+        "물가에 항의하던",
+        "시위가",
+        "체제 반대로"
+      ],
+      "sub": [
+        "31개 주,",
+        "약 190개 도시로",
+        "번졌습니다."
+      ],
+      "source": "Iran Human Rights (IHRNGO)"
+    },
+    {
+      "type": "stat",
+      "label": [
+        "2026년 1월 8일 밤부터"
+      ],
+      "number": "99% 차단",
+      "main": [
+        "이란 전역",
+        "인터넷 블랙아웃"
+      ],
+      "sub": [
+        "바깥 세상은",
+        "볼 수 없었습니다"
+      ],
+      "source": "NetBlocks (IHRNGO 인용)"
+    },
+    {
+      "type": "stat",
+      "label": [
+        "확인된 사망자"
+      ],
+      "number": "6,872명",
+      "main": [
+        "인권단체가",
+        "하나하나 확인한 수"
+      ],
+      "sub": [
+        "1만 1,280건은",
+        "아직 조사 중"
+      ],
+      "source": "HRANA (Gulf News 보도)"
+    },
+    {
+      "type": "text",
+      "kicker": "정부의 발표",
+      "lines": [
+        "이란 정부는",
+        "3,117명이라고",
+        "발표"
+      ],
+      "sub": [
+        "이란 정권은 과거에도",
+        "사망자를 줄이거나",
+        "숨겨 왔습니다."
+      ],
+      "source": "AP (Gulf News 보도)"
+    },
+    {
+      "type": "text",
+      "kicker": "2026년 1월 10일",
+      "lines": [
+        "검찰총장:",
+        "시위 참가자는",
+        "'신의 적'"
+      ],
+      "sub": [
+        "사형까지",
+        "가능한 혐의입니다."
+      ],
+      "source": "GlobalSecurity.org 정리"
+    },
+    {
+      "type": "closing",
+      "lines": [
+        "정권이 국민을",
+        "두려워할 때",
+        "인터넷부터 끈다"
+      ],
+      "sub": [
+        "정보의 자유가",
+        "첫 번째 자유입니다."
+      ],
+      "cta": "팔로우하고 함께 기록해요"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Iran Human Rights (IHRNGO, 2026.1.14) — 31개 주 약 190개 도시, 인터넷 99% 차단",
+      "url": "https://iranhr.net/en/print/5/8529/"
+    },
+    {
+      "name": "Gulf News — HRANA 6,872명 확인, 11,280건 조사 중",
+      "url": "https://gulfnews.com/world/mena/unprecedented-mass-killing-in-iran-hrana-reports-6872-deaths-verified-11280-cases-under-investigation-50000-arrested-as-ngos-battle-to-quantify-scale-of-crackdown-1.500431041"
+    },
+    {
+      "name": "Gulf News (AP) — 이란 정부 발표 3,117명, 과거 축소 발표",
+      "url": "https://gulfnews.com/world/mena/death-toll-from-a-crackdown-on-protests-in-iran-at-least-5002-activists-say-1.500417942"
+    },
+    {
+      "name": "GlobalSecurity.org — 12월 28일 시작, 1월 10일 검찰총장 '신의 적' 경고",
+      "url": "https://www.globalsecurity.org/military/world/iran/regime-change-2026.htm"
+    },
+    {
+      "name": "ARA — 물가 항의에서 체제 반대로",
+      "url": "https://en.ara.cat/international/the-repression-in-iran-does-not-end-with-the-protests_1_5615131.amp.html"
+    }
+  ]
+}

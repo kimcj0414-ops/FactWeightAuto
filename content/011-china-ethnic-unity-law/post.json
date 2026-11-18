@@ -1,0 +1,125 @@
+{
+  "id": "011-china-ethnic-unity-law",
+  "title": "중국 민족단결법 (11편)",
+  "status": "draft",
+  "publish_at": "",
+  "caption": "중국의 새 '민족단결법'이 2026년 7월 시행됐습니다.\n\n모든 민족에게 하나의 국가 정체성을 요구하고, 중국 밖에 사는 사람까지 처벌할 수 있게 했습니다. 유엔 인권최고대표는 폐지를 요구했습니다.\n\n#중국 #민족단결법 #위구르 #티베트 #팩트체크",
+  "threads_text": "중국이 '민족단결법'을 시행했습니다.\n중국 밖에 사는 사람도 '민족 단결을 해치면' 처벌할 수 있다는 법입니다.\n\n모두가 같은 말을 하고 같은 생각을 하는 나라,\n그건 단결일까요, 침묵일까요?",
+  "slides": [
+    {
+      "type": "cover",
+      "lines": [
+        "중국",
+        "'민족단결법'"
+      ],
+      "accent": [
+        "하나로 만들기,",
+        "아니면 지우기"
+      ],
+      "sub": [
+        "2026년 7월 1일",
+        "시행"
+      ]
+    },
+    {
+      "type": "text",
+      "kicker": "2026년 3월 12일",
+      "lines": [
+        "중국 전인대가",
+        "통과시킨 법"
+      ],
+      "sub": [
+        "7월 1일부터",
+        "시행됐습니다."
+      ],
+      "source": "RFA (2026.7)"
+    },
+    {
+      "type": "text",
+      "kicker": "핵심 내용",
+      "lines": [
+        "모든 민족에게",
+        "하나의",
+        "국가 정체성"
+      ],
+      "sub": [
+        "교육·공공장소에서",
+        "표준 중국어를",
+        "더 강하게"
+      ],
+      "source": "AFP (UCA News 보도)"
+    },
+    {
+      "type": "text",
+      "kicker": "제63조",
+      "lines": [
+        "중국 밖에 사는",
+        "사람도",
+        "처벌 대상"
+      ],
+      "sub": [
+        "'민족 단결을 해치면'",
+        "법적 책임을",
+        "물을 수 있습니다."
+      ],
+      "source": "RFA·위구르 단체 공동성명"
+    },
+    {
+      "type": "stat",
+      "label": [
+        "유엔 인권최고대표",
+        "(2026년 6월 15일)"
+      ],
+      "number": "\"폐지하라\"",
+      "main": [
+        "언어·종교·표현의",
+        "자유를 제한할 위험"
+      ],
+      "source": "Volker Türk, UN Human Rights Council"
+    },
+    {
+      "type": "text",
+      "kicker": "중국 정부의 설명",
+      "lines": [
+        "민족 분열과",
+        "불법 행위를",
+        "막기 위한 법"
+      ],
+      "sub": [
+        "'사회 통합'을",
+        "강화한다는 입장"
+      ],
+      "source": "AFP (UCA News 보도)"
+    },
+    {
+      "type": "closing",
+      "lines": [
+        "다름을 지우는",
+        "'단결'"
+      ],
+      "sub": [
+        "자유는",
+        "다를 권리입니다."
+      ],
+      "cta": "팔로우하고 함께 기록해요"
+    }
+  ],
+  "sources": [
+    {
+      "name": "RFA — Explained: China's ethnic unity law (3.12 통과, 7.1 시행, 해외 거주자 처벌)",
+      "url": "https://rfa.org/english/tibet/2026/07/24/explainer-china-ethnic-unity-law-tibet-uyghur/"
+    },
+    {
+      "name": "UCA News (AFP) — 공통 국가 정체성, 표준 중국어 강화, 중국 정부 설명",
+      "url": "https://www.ucanews.com/news/china-enacts-new-ethnic-unity-law-amid-international-criticism/114079"
+    },
+    {
+      "name": "Campaign for Uyghurs — 50여 위구르 단체 공동성명 (제63조)",
+      "url": "https://campaignforuyghurs.org/joint-statement-50-uyghur-groups-call-for-the-repeal-of-the-ethnic-unity-law/"
+    },
+    {
+      "name": "NCHRD — Volker Türk 폐지 요구 (2026.6.15)",
+      "url": "https://www.nchrd.org/?p=27967"
+    }
+  ]
+}
