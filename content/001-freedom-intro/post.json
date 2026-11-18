@@ -1,7 +1,7 @@
 {
   "id": "001-freedom-intro",
   "title": "자유는 공기와 같아서 (1편)",
-  "status": "approved",
+  "status": "published",
   "publish_at": "",
   "caption": "자유는 공기와 같아서 잃기 전엔 모릅니다.\n\n대약진운동, 북한 정치범수용소, 2026년 세계 자유 점수까지. 출처와 함께 정리했습니다.\n\n#자유민주주의 #북한인권 #전체주의 #팩트체크 #카드뉴스",
   "threads_text": "자유는 공기와 같아서 잃기 전엔 모릅니다.\n대약진운동, 북한 정치범수용소, 2026년 세계 자유 점수까지 출처와 함께 정리했습니다.\n\n자유는 한 번에 사라지지 않습니다.\n조금씩 내주다 보면, 어디서 멈춰야 할까요?",
@@ -157,5 +157,14 @@
       "name": "Freedom in the World 2026 - China",
       "url": "https://www.ecoi.net/en/document/2138116.html"
     }
-  ]
+  ],
+  "published_at": "2026-11-18T12:14+09:00",
+  "published": {
+    "instagram": {
+      "permalink": "https://www.instagram.com/p/Df3g4HNl0nD/"
+    },
+    "threads": {
+      "permalink": "https://www.threads.com/@weight.of.facts/post/Df3g7TAlH89"
+    }
+  }
 }

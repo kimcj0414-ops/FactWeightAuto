@@ -87,7 +87,7 @@ jobs:
         if: always() && steps.mode.outputs.mode != 'check'
         run: |
           git config user.name "factweight-bot"; git config user.email "actions@github.com"
-          git add -A content comments 2>/dev/null || true
+          git add -A content; if [ -d comments ]; then git add -A comments; fi
           if ! git diff --cached --quiet; then
             git commit -m "업로드 결과 기록 ($(TZ=Asia/Seoul date '+%m-%d %H:%M'))"
             for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
