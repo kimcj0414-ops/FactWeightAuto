@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: "*/5 8 * * *"      # 한국시간 오후 5시대, 5분마다 확인 (그날의 무작위 시각에 1편 업로드)
     - cron: "10,30,50 9 * * *" # 한국시간 6시대 따라잡기 (GitHub 실행이 늦어진 날 대비)
+    - cron: "37 3 * * *"       # 매일 낮 12시 37분(한국시간) 댓글 모으기
     - cron: "37 13 * * *"      # 매일 밤 10시 37분(한국시간) 댓글 모으기
   workflow_dispatch:
     inputs:
@@ -42,7 +43,7 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "mode=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event.schedule }}" = "37 13 * * *" ]; then
+          elif [ "${{ github.event.schedule }}" = "37 13 * * *" ] || [ "${{ github.event.schedule }}" = "37 3 * * *" ]; then
             echo "mode=comments" >> "$GITHUB_OUTPUT"
           else
             echo "mode=run" >> "$GITHUB_OUTPUT"
