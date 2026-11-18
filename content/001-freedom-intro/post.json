@@ -49,7 +49,7 @@
         "자연재해가 아닌",
         "정책이 만든 비극"
       ],
-      "source": "세계평화재단 등 (추정치는 학자마다 다름)"
+      "source": "World Peace Foundation 외 (추정치는 학자마다 다름)"
     },
     {
       "type": "stat",
@@ -66,7 +66,7 @@
         "유엔 결론:",
         "'반인도범죄'"
       ],
-      "source": "유엔 북한인권조사위원회 보고서 (2014)"
+      "source": "UN Commission of Inquiry on DPRK (2014)"
     },
     {
       "type": "bars",
@@ -95,7 +95,7 @@
           "tone": "bad"
         }
       ],
-      "source": "프리덤하우스 「세계 자유 보고서 2026」"
+      "source": "Freedom House, Freedom in the World 2026"
     },
     {
       "type": "compare",
@@ -157,6 +157,5 @@
       "name": "Freedom in the World 2026 - China",
       "url": "https://www.ecoi.net/en/document/2138116.html"
     }
-  ],
-  "published": {}
+  ]
 }
