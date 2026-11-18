@@ -1,0 +1,31 @@
+{
+  "id": "001-freedom-intro",
+  "title": "자유는 공기와 같아서 (1편)",
+  "status": "draft",
+  "publish_at": "",
+  "caption": "자유는 공기와 같아서 잃기 전엔 모릅니다.\n\n대약진운동, 북한 정치범수용소, 2026년 세계 자유 점수까지. 출처와 함께 정리했습니다.\n\n#자유민주주의 #북한인권 #전체주의 #팩트체크 #카드뉴스",
+  "threads_text": "자유는 공기와 같아서 잃기 전엔 모릅니다.\n대약진운동, 북한 정치범수용소, 2026년 세계 자유 점수까지 출처와 함께 정리했습니다.",
+  "slides": [
+    {"type": "cover", "lines": ["자유는", "공기와 같아서"], "accent": ["잃기 전엔", "모른다"], "sub": ["자유민주주의와 전체주의를", "비교해 봤습니다"]},
+    {"type": "text", "kicker": "전체주의란?", "lines": ["국가가", "개인의 모든 것을", "정하는 체제"], "sub": ["말, 직업, 사는 곳,", "믿는 것까지."]},
+    {"type": "stat", "label": ["① 중국 대약진운동", "(1958~1962년)"], "number": "약 3,000만 명", "main": ["이상 굶어 죽은", "것으로 추정"], "sub": ["자연재해가 아닌", "정책이 만든 비극"], "source": "세계평화재단 등 (추정치는 학자마다 다름)"},
+    {"type": "stat", "label": ["② 북한 정치범수용소", "(2014년 유엔 조사)"], "number": "8만~12만 명", "main": ["이 수용소에", "갇혀 있다고 봄"], "sub": ["유엔 결론:", "'반인도범죄'"], "source": "유엔 북한인권조사위원회 보고서 (2014)"},
+    {"type": "bars", "label": ["③ 나라별 자유 점수", "(2026년, 100점 만점)"], "max": 100, "rows": [
+      {"name": "대한민국", "value": 83, "text": "83점", "tone": "good"},
+      {"name": "중국", "value": 9, "text": "9점", "tone": "bad"},
+      {"name": "북한", "value": 3, "text": "3점", "tone": "bad"}
+    ], "source": "프리덤하우스 「세계 자유 보고서 2026」"},
+    {"type": "compare", "title": ["같은 한반도,", "다른 삶"],
+      "left": {"title": "대한민국", "items": ["선거로 지도자 교체", "정부 비판 가능", "이사·여행 자유"], "tone": "good"},
+      "right": {"title": "북한", "items": ["3대 세습", "비판하면 수용소", "이동도 허가 필요"], "tone": "bad"}},
+    {"type": "closing", "lines": ["자유는", "지키는 사람의", "것입니다"], "sub": ["투표하고, 말하고,", "기억하는 것."], "cta": "팔로우하고 함께 기록해요"}
+  ],
+  "sources": [
+    {"name": "World Peace Foundation, Mao's Great Leap Forward Famine in Perspective", "url": "https://worldpeacefoundation.org/blog/maos-great-leap-forward-famine-in-perspective/"},
+    {"name": "UN Commission of Inquiry on Human Rights in the DPRK (2014)", "url": "https://www.ibtimes.co.uk/un-crimes-against-humanity-have-been-found-north-korea-1520584"},
+    {"name": "Freedom House, Freedom in the World 2026 - South Korea", "url": "https://freedomhouse.org/country/south-korea/freedom-world/2026"},
+    {"name": "Freedom House, Freedom in the World 2026 - North Korea", "url": "https://freedomhouse.org/country/north-korea/freedom-world/2026"},
+    {"name": "Freedom in the World 2026 - China", "url": "https://www.ecoi.net/en/document/2138116.html"}
+  ],
+  "published": {}
+}

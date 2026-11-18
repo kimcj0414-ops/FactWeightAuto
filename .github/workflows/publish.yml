@@ -1,0 +1,93 @@
+name: 카드뉴스 자동 업로드
+
+on:
+  schedule:
+    - cron: "7 * * * *"        # 매시 7분마다 '올릴 시간 된 승인 글'이 있는지 확인
+    - cron: "37 13 * * *"      # 매일 밤 10시 37분(한국시간) 댓글 모으기
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "check = 열쇠 확인 / run = 예약 글 올리기 / now = 아래 폴더 글 바로 올리기 / comments = 댓글 모으기"
+        required: true
+        default: check
+        type: choice
+        options: [check, run, now, comments]
+      folder:
+        description: "now 모드일 때 올릴 폴더 (예: content/001-freedom-intro)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: factweight
+  cancel-in-progress: false
+
+jobs:
+  work:
+    runs-on: ubuntu-latest
+    env:
+      THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+      IG_TOKEN: ${{ secrets.IG_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      IG_API_HOST: ${{ vars.IG_API_HOST || 'graph.facebook.com' }}
+      IG_API_VERSION: ${{ vars.IG_API_VERSION || 'v22.0' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 할 일 정하기
+        id: mode
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "mode=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "37 13 * * *" ]; then
+            echo "mode=comments" >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=run" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 열쇠 확인
+        if: steps.mode.outputs.mode == 'check'
+        run: python scripts/publish.py check
+
+      - name: 카드 그림이 빠진 글이 있으면 그리기
+        if: steps.mode.outputs.mode == 'run' || steps.mode.outputs.mode == 'now'
+        run: |
+          if python3 - <<'EOF'
+          import glob, json, os, sys
+          for p in glob.glob("content/*/post.json"):
+              d = os.path.dirname(p); n = len(json.load(open(p, encoding="utf-8"))["slides"])
+              if not os.path.exists(f"{d}/slide_{n}.png"):
+                  sys.exit(0)
+          sys.exit(1)
+          EOF
+          then
+            sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk >/dev/null
+            pip install -q pillow
+            python scripts/render.py --missing
+            git config user.name "factweight-bot"; git config user.email "actions@github.com"
+            git add content && git commit -m "카드 그림 자동 생성" && git push || true
+          fi
+
+      - name: 예약 글 올리기
+        if: steps.mode.outputs.mode == 'run'
+        run: python scripts/publish.py run
+
+      - name: 지금 바로 올리기 (시험)
+        if: steps.mode.outputs.mode == 'now'
+        run: python scripts/publish.py now "${{ inputs.folder }}"
+
+      - name: 댓글 모으기
+        if: steps.mode.outputs.mode == 'comments'
+        run: python scripts/comments.py
+
+      - name: 결과 저장
+        if: always() && steps.mode.outputs.mode != 'check'
+        run: |
+          git config user.name "factweight-bot"; git config user.email "actions@github.com"
+          git add -A content comments 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "업로드 결과 기록 ($(TZ=Asia/Seoul date '+%m-%d %H:%M'))"
+            for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
+          fi
