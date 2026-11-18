@@ -1,0 +1,131 @@
+{
+  "id": "003-korea-night",
+  "title": "밤의 한반도 (3편)",
+  "status": "draft",
+  "publish_at": "",
+  "caption": "우주에서 본 한반도의 밤입니다.\n\n2014년 국제우주정거장에서 찍은 사진 속 북한은 바다처럼 캄캄했습니다. 인구 326만의 평양 불빛이 인구 28만의 군산과 비슷했습니다.\n\n#한반도야경 #북한 #자유민주주의 #NASA #팩트체크",
+  "threads_text": "우주에서 본 한반도의 밤.\n북한은 바다처럼 캄캄했고, 평양의 불빛은 군산과 비슷했습니다.\n\n불을 켤 자유도 자유입니다.\n그 자유는 누가 주는 걸까요, 원래 우리 것일까요?",
+  "slides": [
+    {
+      "type": "cover",
+      "lines": [
+        "우주에서 본",
+        "한반도의 밤"
+      ],
+      "accent": [
+        "북한은",
+        "바다처럼 깜깜"
+      ],
+      "sub": [
+        "2014년 국제우주정거장",
+        "사진 이야기"
+      ]
+    },
+    {
+      "type": "text",
+      "kicker": "2014년 1월 30일 밤",
+      "lines": [
+        "남한과 중국은",
+        "환하고,",
+        "북한만 어둡다"
+      ],
+      "sub": [
+        "해안선조차",
+        "보이지 않았습니다."
+      ],
+      "source": "NASA Earth Observatory, The Koreas at Night"
+    },
+    {
+      "type": "stat",
+      "label": [
+        "평양 (인구 326만)"
+      ],
+      "number": "= 군산",
+      "main": [
+        "불빛 크기가",
+        "인구 28만 도시와",
+        "비슷"
+      ],
+      "source": "NASA Earth Observatory (2014)"
+    },
+    {
+      "type": "bars",
+      "label": [
+        "① 1인당 전기 사용량",
+        "(당시, kWh)"
+      ],
+      "max": 10162,
+      "rows": [
+        {
+          "name": "대한민국",
+          "value": 10162,
+          "text": "10,162",
+          "tone": "good"
+        },
+        {
+          "name": "북한",
+          "value": 739,
+          "text": "739",
+          "tone": "bad"
+        }
+      ],
+      "source": "NASA Earth Observatory (2014)"
+    },
+    {
+      "type": "stat",
+      "label": [
+        "② 지금은? (2024년)"
+      ],
+      "number": "4.2%",
+      "main": [
+        "북한 전기 생산은",
+        "남한의 4.2%"
+      ],
+      "sub": [
+        "10년이 지나도",
+        "여전히 어둡습니다"
+      ],
+      "source": "국가데이터처, 2025 북한의 주요통계지표"
+    },
+    {
+      "type": "text",
+      "kicker": "불빛이 말해 주는 것",
+      "lines": [
+        "밤의 불빛은",
+        "그 나라의",
+        "경제를 보여 줍니다"
+      ],
+      "sub": [
+        "공장, 가게, 집.",
+        "사람들의 하루가",
+        "빛이 됩니다."
+      ]
+    },
+    {
+      "type": "closing",
+      "lines": [
+        "같은 밤,",
+        "다른 빛"
+      ],
+      "sub": [
+        "자유가 있는 곳에",
+        "불이 켜졌습니다."
+      ],
+      "cta": "팔로우하고 함께 기록해요"
+    }
+  ],
+  "sources": [
+    {
+      "name": "NASA Earth Observatory, The Koreas at Night (2014)",
+      "url": "https://earthobservatory.nasa.gov/images/83182/the-koreas-at-night"
+    },
+    {
+      "name": "National Geographic (2014.2.27) 1인당 전력 사용량",
+      "url": "https://www.nationalgeographic.com/news/2014/2/140226-north-korea-satellite-photos-darkness-energy/"
+    },
+    {
+      "name": "국가데이터처, 2025 북한의 주요통계지표",
+      "url": "https://mods.go.kr/boardDownload.es?bid=11825&list_no=442558&seq=2"
+    }
+  ]
+}

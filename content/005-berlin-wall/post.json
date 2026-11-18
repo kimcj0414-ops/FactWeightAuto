@@ -1,0 +1,134 @@
+{
+  "id": "005-berlin-wall",
+  "title": "베를린 장벽 (5편)",
+  "status": "draft",
+  "publish_at": "",
+  "caption": "베를린 장벽은 왜 동쪽에서만 넘었을까요?\n\n장벽이 세워지기 전 12년 동안 동독 주민 약 270만 명이 서쪽으로 떠났습니다. 장벽이 선 뒤에는 최소 140명이 그곳에서 목숨을 잃었습니다.\n\n#베를린장벽 #동독 #공산주의 #자유민주주의 #팩트체크",
+  "threads_text": "베를린 장벽은 늘 동쪽 사람만 넘으려 했습니다.\n장벽 앞에서 최소 140명이 목숨을 잃었습니다.\n\n사람을 지키려고 쌓은 벽과\n사람을 가두려고 쌓은 벽, 어떻게 구별할 수 있을까요?",
+  "slides": [
+    {
+      "type": "cover",
+      "lines": [
+        "베를린 장벽은"
+      ],
+      "accent": [
+        "왜 동쪽에서만",
+        "넘었을까"
+      ],
+      "sub": [
+        "1961~1989년,",
+        "28년의 기록"
+      ]
+    },
+    {
+      "type": "stat",
+      "label": [
+        "장벽 전 12년",
+        "(1949~1961년)"
+      ],
+      "number": "약 270만 명",
+      "main": [
+        "동독을 떠나",
+        "서쪽으로 감"
+      ],
+      "sub": [
+        "사람이 빠져나가자",
+        "동독은 벽을 쌓았습니다"
+      ],
+      "source": "berlin.de, Construction of the Berlin Wall"
+    },
+    {
+      "type": "text",
+      "kicker": "1961년 8월 13일",
+      "lines": [
+        "하룻밤 사이",
+        "도시 한가운데",
+        "벽이 섰다"
+      ],
+      "sub": [
+        "시내를 가른 길이만",
+        "43.1km."
+      ],
+      "source": "berlin.de"
+    },
+    {
+      "type": "stat",
+      "label": [
+        "장벽에서 숨진 사람",
+        "(1961~1989년)"
+      ],
+      "number": "최소 140명",
+      "main": [
+        "넘으려다 총에 맞거나",
+        "사고로 숨짐"
+      ],
+      "source": "Berlin Wall Foundation / ZZF Potsdam"
+    },
+    {
+      "type": "compare",
+      "title": [
+        "벽은",
+        "누구를 향했나"
+      ],
+      "left": {
+        "title": "서독",
+        "items": [
+          "떠나는 것 자유",
+          "총 겨눌 이유 없음",
+          "벽 필요 없음"
+        ],
+        "tone": "good"
+      },
+      "right": {
+        "title": "동독",
+        "items": [
+          "떠나면 범죄",
+          "국경에서 사격",
+          "자기 국민 감금"
+        ],
+        "tone": "bad"
+      }
+    },
+    {
+      "type": "text",
+      "kicker": "1989년 11월 9일",
+      "lines": [
+        "국경이 열리자",
+        "사람들이",
+        "벽을 허물었다"
+      ],
+      "sub": [
+        "벽은 28년을",
+        "버티지 못했습니다."
+      ],
+      "source": "berlin.de"
+    },
+    {
+      "type": "closing",
+      "lines": [
+        "사람이 떠나는",
+        "나라와",
+        "찾아오는 나라"
+      ],
+      "sub": [
+        "발걸음이",
+        "답을 말해 줍니다."
+      ],
+      "cta": "팔로우하고 함께 기록해요"
+    }
+  ],
+  "sources": [
+    {
+      "name": "berlin.de, Construction of the Berlin Wall (270만 명, 43.1km, 140명)",
+      "url": "https://berlin.de/mauer/en/history/construction-of-the-berlin-wall"
+    },
+    {
+      "name": "Berlin Wall Foundation, Victims at the Berlin Wall",
+      "url": "https://stiftung-berliner-mauer.de/en/node/235"
+    },
+    {
+      "name": "ZZF Potsdam, The Victims at the Berlin Wall 1961-1989",
+      "url": "https://zzf-potsdam.de/en/research/projects/victims-at-the-berlin-wall"
+    }
+  ]
+}

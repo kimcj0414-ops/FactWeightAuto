@@ -1,0 +1,138 @@
+{
+  "id": "004-arduous-march",
+  "title": "고난의 행군 (4편)",
+  "status": "draft",
+  "publish_at": "",
+  "caption": "1990년대 중반 북한에 대기근이 닥쳤습니다.\n\n북한 정권은 이를 '고난의 행군'이라 불렀고, 인구학자들은 60만~100만 명이 목숨을 잃은 것으로 추정합니다.\n\n#고난의행군 #북한인권 #계획경제 #자유민주주의 #팩트체크",
+  "threads_text": "1990년대 북한 대기근.\n정권은 '고난의 행군'이라 불렀고, 수십만에서 100만 명이 굶어 죽은 것으로 추정됩니다.\n\n먹을 것을 국가가 나눠 주는 사회에서\n국가가 멈추면, 개인에게 남는 건 무엇일까요?",
+  "slides": [
+    {
+      "type": "cover",
+      "lines": [
+        "굶주림에",
+        "붙인 이름"
+      ],
+      "accent": [
+        "고난의 행군"
+      ],
+      "sub": [
+        "1990년대 북한",
+        "대기근 이야기"
+      ]
+    },
+    {
+      "type": "text",
+      "kicker": "고난의 행군이란?",
+      "lines": [
+        "북한 정권이",
+        "대기근을 부른",
+        "선전 구호"
+      ],
+      "sub": [
+        "'기근'이라는 말 대신",
+        "항일 투쟁 이야기를",
+        "가져다 붙였습니다."
+      ],
+      "source": "Wikipedia, North Korean famine"
+    },
+    {
+      "type": "stat",
+      "label": [
+        "대기근 사망자",
+        "(1995~2000년)"
+      ],
+      "number": "60만~100만 명",
+      "main": [
+        "굶주림으로",
+        "숨진 것으로 추정"
+      ],
+      "sub": [
+        "당시 인구의",
+        "약 3~5%"
+      ],
+      "source": "Goodkind & West (2001), Population and Development Review"
+    },
+    {
+      "type": "text",
+      "kicker": "추정치는 왜 다를까?",
+      "lines": [
+        "24만에서",
+        "350만 명까지",
+        "학자마다 다름"
+      ],
+      "sub": [
+        "북한이 정확한",
+        "자료를 공개하지",
+        "않기 때문입니다."
+      ],
+      "source": "Wikipedia, North Korean famine"
+    },
+    {
+      "type": "text",
+      "kicker": "원인",
+      "lines": [
+        "경제 실패,",
+        "자연재해,",
+        "소련의 붕괴"
+      ],
+      "sub": [
+        "국가가 모든 걸",
+        "계획하던 경제가",
+        "한꺼번에 멈췄습니다."
+      ],
+      "source": "Wikipedia, North Korean famine"
+    },
+    {
+      "type": "compare",
+      "title": [
+        "같은 시기,",
+        "남쪽은"
+      ],
+      "left": {
+        "title": "대한민국",
+        "items": [
+          "외환위기를 겪음",
+          "하지만 시장은 작동",
+          "대규모 기근 없음"
+        ],
+        "tone": "good"
+      },
+      "right": {
+        "title": "북한",
+        "items": [
+          "배급에 의존",
+          "국가가 멈추자",
+          "수십만 명 사망"
+        ],
+        "tone": "bad"
+      }
+    },
+    {
+      "type": "closing",
+      "lines": [
+        "굶주림은",
+        "재해가 아니라",
+        "제도의 결과"
+      ],
+      "sub": [
+        "자유로운 시장이",
+        "사람을 살립니다."
+      ],
+      "cta": "팔로우하고 함께 기록해요"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Goodkind & West (2001), The North Korean Famine and Its Demographic Impact",
+      "url": "https://ideas.repec.org/a/bla/popdev/v27y2001i2p219-238.html"
+    },
+    {
+      "name": "PIIE, Famine Deaths, Again (Haggard & Noland 결론 3~5%)",
+      "url": "https://www.piie.com/blogs/north-korea-witness-transformation/famine-deaths-again"
+    },
+    {
+      "name": "Wikipedia, North Korean famine (사망 추정 범위·원인·명칭)",
+      "url": "https://en.wikipedia.org/wiki/Arduous_March"
+    }
+  ]
+}
