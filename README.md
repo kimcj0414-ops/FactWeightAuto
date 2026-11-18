@@ -5,7 +5,7 @@
 ## 흐름
 1. Claude가 주제를 조사해 `content/번호-주제/post.json` 을 만들고 카드 그림(slide_1.png ...)과 미리보기(preview.png)를 그려요. 상태는 **draft**.
 2. 사장님이 미리보기를 보고 "승인"하면 상태가 **approved** 로 바뀌어요.
-3. GitHub Actions가 매시간 확인해서 `publish_at` 시간이 된 승인 글을 인스타·Threads에 동시에 올려요.
+3. GitHub Actions가 매일 오후 5~6시 사이 무작위 시각에 승인된 글 1편을 인스타·Threads에 동시에 올려요.
 4. 매일 밤 댓글을 모아 `comments/inbox.json` 에 저장해요. 답글은 사장님 확인 후에만 올려요.
 
 ## 비밀값 (Settings → Secrets and variables → Actions)

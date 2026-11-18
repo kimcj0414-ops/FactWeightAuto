@@ -163,9 +163,34 @@ def due(post, now):
     return datetime.datetime.fromisoformat(at) <= now
 
 
+def published_today(now):
+    today = now.date().isoformat()
+    for p in glob.glob("content/*/post.json"):
+        post = json.load(open(p, encoding="utf-8"))
+        if post.get("status") == "published" and str(post.get("published_at", "")).startswith(today):
+            return True
+    return False
+
+
+def time_slot_ok(now):
+    """매일 오후 5시~6시 사이 '그날의 무작위 분'이 지나면 올린다.
+    무작위 분은 날짜로 정해져서 하루 동안은 같은 값. 늦게 깨어난 경우 6시대에 따라잡기."""
+    import hashlib
+    target = int(hashlib.md5(now.date().isoformat().encode()).hexdigest(), 16) % 56  # 0~55분
+    if now.hour == 17:
+        print(f"오늘 목표 시각: 17:{target:02d}")
+        return now.minute >= target
+    return now.hour == 18  # 실행이 늦어졌을 때만
+
+
 def run(force_folder=None):
     now = datetime.datetime.now(KST)
     ok = True
+    if not force_folder:
+        if published_today(now):
+            print("오늘은 이미 한 편 올렸어요."); return True
+        if not time_slot_ok(now):
+            print("아직 올릴 시간이 아니에요."); return True
     folders = [force_folder] if force_folder else sorted(os.path.dirname(p) for p in glob.glob("content/*/post.json"))
     done = 0
     for folder in folders:
