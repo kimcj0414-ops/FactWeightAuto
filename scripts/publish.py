@@ -109,6 +109,10 @@ def check():
             ("graph.instagram.com", "me", {"fields": "user_id,username"}),
             (IG_HOST, f"{IG_USER}" if IG_USER else "me", {"fields": "id,username" if IG_USER else "id,name"}),
             ("graph.facebook.com", "me/accounts", {"fields": "instagram_business_account{id,username}"}),
+            (IG_HOST, f"{IG_USER}", {"fields": "username,followers_count,media_count"}),
+            (IG_HOST, f"{IG_USER}", {"fields": "account_type"}),
+            ("graph.instagram.com", "me", {"fields": "account_type,username"}),
+            (IG_HOST, f"{IG_USER}/insights", {"metric": "reach", "period": "day"}),
         ]
         for host, path, f in tries:
             try:
