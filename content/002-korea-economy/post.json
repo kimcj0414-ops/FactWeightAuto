@@ -1,7 +1,7 @@
 {
   "id": "002-korea-economy",
   "title": "같은 민족, 다른 지갑 (2편)",
-  "status": "approved",
+  "status": "published",
   "publish_at": "",
   "caption": "같은 민족, 같은 땅. 차이를 만든 건 체제였습니다.\n\n남과 북의 1인당 소득은 28배, 기대수명은 8~9년 차이가 납니다. 공산 독재 70여 년의 성적표입니다. 한국은행·국가데이터처 자료로 정리했습니다.\n\n#남북한비교 #자유민주주의 #시장경제 #북한경제 #팩트체크",
   "threads_text": "같은 민족, 같은 땅에서 출발했습니다.\n지금 남과 북의 1인당 소득은 28배 차이가 납니다.\n\n같은 사람들이 이렇게 다른 결과를 만들었다면,\n문제는 사람이었을까요, 공산 독재였을까요?",
@@ -148,5 +148,16 @@
       "name": "국가데이터처, 2025 북한의 주요통계지표 (2025.12.23)",
       "url": "https://mods.go.kr/boardDownload.es?bid=11825&list_no=442558&seq=2"
     }
-  ]
+  ],
+  "published": {
+    "instagram": {
+      "id": "18099320624131706",
+      "permalink": "https://www.instagram.com/p/Df6subYF9Yu/"
+    },
+    "threads": {
+      "id": "18124220869800479",
+      "permalink": "https://www.threads.com/@weight.of.facts/post/Df6syIPlQP4"
+    }
+  },
+  "published_at": "2026-11-19T17:55+09:00"
 }
