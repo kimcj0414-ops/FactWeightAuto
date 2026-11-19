@@ -31,7 +31,7 @@ body{font-family:var(--font);color:#fff;-webkit-font-smoothing:antialiased}
 .box{width:100%;height:100%;border-radius:24px;border:5px solid var(--c);background:rgba(255,255,255,.04);
   display:flex;flex-direction:column;justify-content:center;padding:18px 26px}
 .box .bt{font-size:44px;font-weight:900;color:var(--c);line-height:1.18}
-.box .bs{font-size:34px;font-weight:600;color:var(--sub);line-height:1.3;margin-top:8px}
+.box .bs{font-size:40px;font-weight:600;color:var(--sub);line-height:1.3;margin-top:8px}
 .fig-elabel{font-size:28px!important;font-weight:800!important;padding:4px 16px!important;
   background:var(--navy)!important;color:var(--gold)!important;border:2px solid var(--gold)!important;border-radius:22px!important}
 .fig-pill,.fig-dock,.fig-menu{display:none!important}
