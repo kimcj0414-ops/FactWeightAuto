@@ -113,11 +113,13 @@ def check():
             (IG_HOST, f"{IG_USER}", {"fields": "account_type"}),
             ("graph.instagram.com", "me", {"fields": "account_type,username"}),
             (IG_HOST, f"{IG_USER}/insights", {"metric": "reach", "period": "day"}),
+            ("graph.facebook.com", "debug_token", {"input_token": IG_TOKEN}),
+            ("graph.facebook.com", "me/permissions", {}),
         ]
         for host, path, f in tries:
             try:
                 r = call("GET", f"https://{host}/{IG_VER}/{path}", dict(f, access_token=IG_TOKEN))
-                print(f"[인스타] {host}/{path} 응답: {json.dumps(r, ensure_ascii=False)[:400]}")
+                print(f"[인스타] {host}/{path} 응답: {json.dumps(r, ensure_ascii=False)[:1500]}")
                 found = True
             except Exception as e:
                 print(f"[인스타] {host}/{path} 실패: {str(e)[:200]}")
