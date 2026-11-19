@@ -73,3 +73,4 @@
 - 엔진: vendor/html-diagram (tonywjs/html-diagram, MIT). 헤드리스 크롬으로 PNG를 찍는다.
 - 박스 글자: 제목 44px, 설명 34px 이상 (큰 글씨 원칙 유지). 박스는 4~6개 이내.
 - 예시는 scripts/render_diagram.py 맨 위 설명 참고.
+- 흐름도에 "style":"ink" 를 넣으면 테두리·화살표가 손으로 그린 잉크 선처럼 살짝 떨린다 (line-art-animation, MIT 필터 값 참고). 기본은 반듯한 선.

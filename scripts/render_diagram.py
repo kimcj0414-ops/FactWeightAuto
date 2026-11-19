@@ -35,6 +35,11 @@ body{font-family:var(--font);color:#fff;-webkit-font-smoothing:antialiased}
 .fig-elabel{font-size:28px!important;font-weight:800!important;padding:4px 16px!important;
   background:var(--navy)!important;color:var(--gold)!important;border:2px solid var(--gold)!important;border-radius:22px!important}
 .fig-pill,.fig-dock,.fig-menu{display:none!important}
+/* 손그림 잉크 느낌 (line-art-animation ink.ts의 inkDefs 필터 값, MIT) */
+.ink .box{border:none;position:relative}
+.ink .box::before{content:"";position:absolute;inset:0;border:5px solid var(--c);border-radius:24px;filter:url(#ink-edge)}
+.ink .fig-edges{filter:url(#ink-edge)}
+.ink .ttl u{text-decoration:none;background:none;position:relative}
 .src{font-size:24px;color:#C9D3E6;line-height:1.3}
 .handle{font-size:30px;font-weight:700;color:#fff;text-align:right}
 """
@@ -82,7 +87,12 @@ def build_html(s, page, total):
     tpl = open(TEMPLATE, encoding="utf-8").read()
     tpl = tpl.replace("<title>도식</title>", f"<title>{esc(BRAND)} {page}</title>", 1)
     tpl = re.sub(r"<style>.*?</style>", "<style>" + STYLE + "</style>", tpl, count=1, flags=re.S)
-    content = f'<div class="fig-canvas" data-size="{W}x{H}">\n' + "\n".join(nodes) + "\n</div>"
+    ink = s.get("style") == "ink"
+    defs = ('<svg width="0" height="0" style="position:absolute"><filter id="ink-edge" x="-3%" y="-3%" width="106%" height="106%">'
+            '<feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="n"/>'
+            '<feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/>'
+            '<feGaussianBlur in="d" stdDeviation="0.5"/></filter></svg>') if ink else ""
+    content = defs + f'<div class="fig-canvas{" ink" if ink else ""}" data-size="{W}x{H}">\n' + "\n".join(nodes) + "\n</div>"
     tpl = re.sub(r"(FIG:CONTENT START.*?-->).*?(<!-- =+ FIG:CONTENT END)",
                  lambda m: m.group(1) + "\n" + content + "\n" + m.group(2), tpl, count=1, flags=re.S)
     return tpl
