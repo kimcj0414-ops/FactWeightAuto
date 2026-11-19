@@ -193,8 +193,13 @@ def render(folder):
     for old in glob.glob(os.path.join(folder, "slide_*.png")):
         os.remove(old)
     for i, s in enumerate(slides, 1):
+        out = os.path.join(folder, f"slide_{i}.png")
+        if s["type"] == "diagram":  # 박스+화살표 흐름도는 HTML 엔진으로
+            from render_diagram import render_diagram
+            render_diagram(s, i, n, out)
+            continue
         im = KINDS[s["type"]](s, i, n)
-        im.save(os.path.join(folder, f"slide_{i}.png"), optimize=True)
+        im.save(out, optimize=True)
     # 미리보기 한 장 (검수용)
     sw = 300; sh = int(sw * H / W); pad = 20; cols = min(4, n); rows = (n + cols - 1) // cols
     sheet = Image.new("RGB", (pad + cols * (sw + pad), pad + rows * (sh + pad)), "#DDDDDD")

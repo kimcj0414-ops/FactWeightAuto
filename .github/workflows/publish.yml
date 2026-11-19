@@ -66,7 +66,7 @@ jobs:
           EOF
           then
             sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk >/dev/null
-            pip install -q pillow
+            pip install -q pillow playwright
             python scripts/render.py --missing
             git config user.name "factweight-bot"; git config user.email "actions@github.com"
             git add content && git commit -m "카드 그림 자동 생성" && git push || true
