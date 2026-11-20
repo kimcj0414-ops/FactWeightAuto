@@ -135,6 +135,6 @@
     }
   },
   "errors": [
-    "Threads: POST https://graph.threads.net/v1.0/me/threads -> 400: {\"error\":{\"message\":\"An unknown error occurred\",\"code\":1,\"type\":\"OAuthException\",\"error_subcode\":2207052,\"is_transient\":false,\"error_user_msg\":\"The media could not be fetched from this URI: https:\\/\\/raw.githubusercontent.com\\/kimcj0414-ops\\/FactWeightAuto\\/main\\/content\\/003-korea-night\\/slide_1.png.Please check the limitations section in our development document for more information: https:\\/\\/developers.facebook.com\\/docs\\/instagram-platform\\/instagram-graph-api\\/reference\\/ig-user\\/media#cre"
+    "Threads: POST https://graph.threads.net/v1.0/me/threads_publish -> 400: {\"error\":{\"message\":\"The requested resource does not exist\",\"code\":24,\"type\":\"OAuthException\",\"error_subcode\":4279009,\"is_transient\":false,\"error_user_msg\":\"The media with id 17869199913696220 cannot be found.\",\"error_user_title\":\"Media Not Found\",\"fbtrace_id\":\"A_al4QNLvM0Naq9Miv97JsO\"}}"
   ]
 }
