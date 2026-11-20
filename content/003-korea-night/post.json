@@ -127,5 +127,14 @@
       "name": "국가데이터처, 2025 북한의 주요통계지표",
       "url": "https://mods.go.kr/boardDownload.es?bid=11825&list_no=442558&seq=2"
     }
+  ],
+  "published": {
+    "instagram": {
+      "id": "18001994837825039",
+      "permalink": "https://www.instagram.com/p/Df9RYo5kY4B/"
+    }
+  },
+  "errors": [
+    "Threads: POST https://graph.threads.net/v1.0/me/threads -> 400: {\"error\":{\"message\":\"An unknown error occurred\",\"code\":1,\"type\":\"OAuthException\",\"error_subcode\":2207052,\"is_transient\":false,\"error_user_msg\":\"The media could not be fetched from this URI: https:\\/\\/raw.githubusercontent.com\\/kimcj0414-ops\\/FactWeightAuto\\/main\\/content\\/003-korea-night\\/slide_1.png.Please check the limitations section in our development document for more information: https:\\/\\/developers.facebook.com\\/docs\\/instagram-platform\\/instagram-graph-api\\/reference\\/ig-user\\/media#cre"
   ]
 }
