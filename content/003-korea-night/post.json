@@ -1,7 +1,7 @@
 {
   "id": "003-korea-night",
   "title": "밤의 한반도 (3편)",
-  "status": "approved",
+  "status": "published",
   "publish_at": "",
   "caption": "우주에서 찍힌 독재의 민낯.\n\n2014년 국제우주정거장에서 본 북한은 바다처럼 캄캄했습니다. 인구 326만의 수도 평양의 불빛이 인구 28만의 군산과 비슷했습니다.\n\n#한반도야경 #북한 #자유민주주의 #NASA #팩트체크",
   "threads_text": "우주에서 본 한반도의 밤.\n북한은 바다처럼 캄캄했고, 평양의 불빛은 군산과 비슷했습니다.\n\n불을 켤 자유도 자유입니다.\n그 자유는 누가 주는 걸까요, 원래 우리 것일까요?",
@@ -132,9 +132,11 @@
     "instagram": {
       "id": "18001994837825039",
       "permalink": "https://www.instagram.com/p/Df9RYo5kY4B/"
+    },
+    "threads": {
+      "id": "17970916323223217",
+      "permalink": "https://www.threads.com/@weight.of.facts/post/Df_05vxFmUb"
     }
   },
-  "errors": [
-    "Threads: POST https://graph.threads.net/v1.0/me/threads_publish -> 400: {\"error\":{\"message\":\"The requested resource does not exist\",\"code\":24,\"type\":\"OAuthException\",\"error_subcode\":4279009,\"is_transient\":false,\"error_user_msg\":\"The media with id 17869199913696220 cannot be found.\",\"error_user_title\":\"Media Not Found\",\"fbtrace_id\":\"A_al4QNLvM0Naq9Miv97JsO\"}}"
-  ]
+  "published_at": "2026-11-21T17:42+09:00"
 }
