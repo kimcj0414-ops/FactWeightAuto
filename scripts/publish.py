@@ -68,8 +68,26 @@ def threads_post(urls, text):
     c = call("POST", f"{TH_BASE}/me/threads", {"media_type": "CAROUSEL", "children": ",".join(kids), "text": text[:500], "access_token": TH_TOKEN})
     wait_ready(lambda: call("GET", f"{TH_BASE}/{c['id']}", {"fields": "status", "access_token": TH_TOKEN}).get("status"), "Threads 묶음")
     pub = call("POST", f"{TH_BASE}/me/threads_publish", {"creation_id": c["id"], "access_token": TH_TOKEN})
-    link = call("GET", f"{TH_BASE}/{pub['id']}", {"fields": "permalink", "access_token": TH_TOKEN}).get("permalink", "")
+    try:  # 이미 올라간 뒤라 여기서 실패해도 다시 올리지 않는다
+        link = call("GET", f"{TH_BASE}/{pub['id']}", {"fields": "permalink", "access_token": TH_TOKEN}).get("permalink", "")
+    except Exception:
+        link = ""
     return {"id": pub["id"], "permalink": link}
+
+
+def threads_post_retry(urls, text, tries=3, wait=60):
+    """Threads가 사진을 못 가져오거나(일시 오류) 묶음을 못 찾을 때 처음부터 다시 시도.
+    threads_publish 가 성공한 뒤에는 재시도하지 않으므로 두 번 올라가지 않는다."""
+    last = None
+    for n in range(1, tries + 1):
+        try:
+            return threads_post(urls, text)
+        except Exception as e:
+            last = e
+            print(f"[Threads] {n}번째 시도 실패: {str(e)[:200]}")
+            if n < tries:
+                time.sleep(wait)
+    raise last
 
 
 # ---------------- Instagram ----------------
@@ -140,12 +158,14 @@ def publish_one(folder, post):
     if "instagram" not in pubs and IG_TOKEN and IG_USER:
         try:
             pubs["instagram"] = ig_post(urls, post["caption"])
+            pubs["instagram"]["at"] = datetime.datetime.now(KST).isoformat(timespec="minutes")
             print(f"인스타 완료: {pubs['instagram']['permalink']}")
         except Exception as e:
             errors.append(f"인스타: {e}")
     if "threads" not in pubs and TH_TOKEN:
         try:
-            pubs["threads"] = threads_post(urls, post.get("threads_text") or post["caption"])
+            pubs["threads"] = threads_post_retry(urls, post.get("threads_text") or post["caption"])
+            pubs["threads"]["at"] = datetime.datetime.now(KST).isoformat(timespec="minutes")
             print(f"Threads 완료: {pubs['threads']['permalink']}")
         except Exception as e:
             errors.append(f"Threads: {e}")
@@ -154,7 +174,9 @@ def publish_one(folder, post):
     else:
         post.pop("errors", None)
         post["status"] = "published"
-        post["published_at"] = datetime.datetime.now(KST).isoformat(timespec="minutes")
+        ats = [v.get("at") for v in pubs.values() if isinstance(v, dict) and v.get("at")]
+        # 그 편이 '처음' 올라간 날을 게시일로 친다 (반쪽만 올라갔다가 다음 날 마저 올려도 그날 새 편이 밀리지 않게)
+        post["published_at"] = min(ats) if ats else datetime.datetime.now(KST).isoformat(timespec="minutes")
     with open(os.path.join(folder, "post.json"), "w", encoding="utf-8") as fp:
         json.dump(post, fp, ensure_ascii=False, indent=2)
     return not errors
@@ -189,10 +211,23 @@ def time_slot_ok(now):
     return now.hour == 18  # 실행이 늦어졌을 때만
 
 
+def finish_partial():
+    """인스타만(또는 Threads만) 올라가고 나머지가 실패한 편을 마저 올린다."""
+    ok = True
+    for p in sorted(glob.glob("content/*/post.json")):
+        post = json.load(open(p, encoding="utf-8"))
+        if post.get("status") == "approved" and post.get("published"):
+            folder = os.path.dirname(p)
+            print(f"반쪽만 올라간 편 마저 올리기: {folder}")
+            ok = publish_one(folder, post) and ok
+    return ok
+
+
 def run(force_folder=None):
     now = datetime.datetime.now(KST)
     ok = True
     if not force_folder:
+        ok = finish_partial()
         if published_today(now):
             print("오늘은 이미 한 편 올렸어요."); return True
         if not time_slot_ok(now):
@@ -203,6 +238,8 @@ def run(force_folder=None):
         post = json.load(open(os.path.join(folder, "post.json"), encoding="utf-8"))
         if not force_folder and not due(post, now):
             continue
+        if not force_folder and post.get("published"):
+            continue  # 반쪽 편은 위에서 처리
         if not os.path.exists(os.path.join(folder, f"slide_{len(post['slides'])}.png")):
             print(f"{folder}: 카드 그림이 없어요"); ok = False; continue
         print(f"올리는 중: {folder}")
