@@ -1,7 +1,7 @@
 {
   "id": "005-berlin-wall",
   "title": "베를린 장벽 (5편)",
-  "status": "approved",
+  "status": "published",
   "publish_at": "",
   "caption": "베를린 장벽은 적을 막는 벽이 아니라, 국민을 가두는 감옥 담장이었습니다.\n\n장벽이 서기 전 12년 동안 동독 주민 약 270만 명이 서쪽으로 탈출했습니다. 장벽이 선 뒤에는 최소 140명이 그곳에서 목숨을 잃었습니다.\n\n#베를린장벽 #동독 #공산주의 #자유민주주의 #팩트체크",
   "threads_text": "베를린 장벽은 늘 동쪽 사람만 넘으려 했습니다.\n장벽 앞에서 최소 140명이 목숨을 잃었습니다.\n\n사람을 지키려고 쌓은 벽과\n사람을 가두려고 쌓은 벽, 어떻게 구별할 수 있을까요?",
@@ -130,5 +130,18 @@
       "name": "ZZF Potsdam, The Victims at the Berlin Wall 1961-1989",
       "url": "https://zzf-potsdam.de/en/research/projects/victims-at-the-berlin-wall"
     }
-  ]
+  ],
+  "published": {
+    "instagram": {
+      "id": "18077617589759244",
+      "permalink": "https://www.instagram.com/p/DgFByo0lyS4/",
+      "at": "2026-11-23T18:11+09:00"
+    },
+    "threads": {
+      "id": "18042122840851294",
+      "permalink": "https://www.threads.com/@weight.of.facts/post/DgFB2reoWKl",
+      "at": "2026-11-23T18:11+09:00"
+    }
+  },
+  "published_at": "2026-11-23T18:11+09:00"
 }
