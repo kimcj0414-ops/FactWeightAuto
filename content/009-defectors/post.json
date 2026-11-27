@@ -1,7 +1,7 @@
 {
   "id": "009-defectors",
   "title": "줄어드는 탈북민 (9편)",
-  "status": "approved",
+  "status": "published",
   "publish_at": "",
   "caption": "목숨 걸고 국경을 넘은 사람들. 그런데 정부는 그들의 이름부터 바꾸려 합니다.\n\n2009년 2,914명이던 한국 입국 탈북민은 2026년 상반기 63명까지 줄었습니다. 북한이 국경을 더 단단히 막았기 때문입니다. 당사자들은 '탈북'이 자신들의 정체성이라며 반발하고 있습니다.\n\n#탈북민 #북향민 #북한인권 #자유민주주의 #팩트체크",
   "threads_text": "한 해 3천 명 가까이 오던 탈북민이 이제 반년에 63명입니다.\n그런데 정부는 이들의 이름부터 '북향민'으로 바꾸려 하고, 당사자들은 \"탈북은 우리 정체성\"이라며 반발합니다.\n\n목숨 걸고 국경을 넘은 사람의 이름,\n국가가 바꿔 불러도 되는 걸까요?",
@@ -157,5 +157,18 @@
       "name": "RFA — 인권위 '당사자 의견 수렴·공론화 필요' 권고 (2026.7.2)",
       "url": "https://rfa.org/korean/in-focus/2026/07/02/defector-human-rights-rimpac-marine/"
     }
-  ]
+  ],
+  "published": {
+    "instagram": {
+      "id": "17959372767034243",
+      "permalink": "https://www.instagram.com/p/DgPTKG5Dc15/",
+      "at": "2026-11-27T17:55+09:00"
+    },
+    "threads": {
+      "id": "18197247031392575",
+      "permalink": "https://www.threads.com/@weight.of.facts/post/DgPTNZWkc9M",
+      "at": "2026-11-27T17:55+09:00"
+    }
+  },
+  "published_at": "2026-11-27T17:55+09:00"
 }
